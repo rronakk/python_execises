@@ -76,11 +76,24 @@ def isLeapYear(year):
 
     # Determine if give year is lear year or not.
     # Algorithm used for reference : http://www.dispersiondesign.com/articles/time/determining_leap_years
-
-    if ((year % 4 == 0) | ((year % 100 == 0) & (year % 400 == 0))):
-        leapYear = 0
-    else:
+    """
+    if ((year % 4 == 0) or ((year % 100 == 0) and (year % 400 == 0))):
         leapYear = 1
+    else:
+        leapYear = 0
+    return leapYear
+    """
+    if (year % 4 == 0):
+        if(year % 100 == 0):
+            if(year % 400 == 0):
+                leapYear = 1
+            else:
+                leapYear = 0
+        else:
+            leapYear = 1
+    else:
+        leapYear = 0
+
     return leapYear
 
 print "=============================================================== \n Your age in days is : %d " % daysBetweenDates(year1, month1, day1, year2, month2, day2)
