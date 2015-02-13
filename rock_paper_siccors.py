@@ -17,5 +17,5 @@ def user_choice(items):
 
 print com_choice(items)
 user_choice(items)
-#test comment
+
 
