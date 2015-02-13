@@ -3,16 +3,16 @@ birthDate = raw_input('>')
 print" Enter current date in following format : yyyy/mm/dd "
 currentDate = raw_input('>')
 
-year1, month1, day1 = birthDate.split("/")
-year2, month2, day2 = currentDate.split("/")
+birth_year, birth_month, birth_day = birthDate.split("/")
+current_year, current_month, current_day = currentDate.split("/")
 
-year1 = int(year1)
-month1 = int(month1)
-day1 = int(day1)
+year1 = int(birth_year)
+month1 = int(birth_month)
+day1 = int(birth_day)
 
-year2 = int(year2)
-month2 = int(month2)
-day2 = int(day2)
+year2 = int(current_year)
+month2 = int(current_month)
+day2 = int(current_day)
 
 
 def daysBetweenDates(year1, month1, day1, year2, month2, day2):
@@ -96,4 +96,4 @@ def isLeapYear(year):
 
     return leapYear
 
-print "=============================================================== \n Your age in days is : %d " % daysBetweenDates(year1, month1, day1, year2, month2, day2)
+print "=============================================================== \n Your age in days is : %d " % daysBetweenDates(birth_year, birth_month, birth_day, current_year, current_month, current_day)
