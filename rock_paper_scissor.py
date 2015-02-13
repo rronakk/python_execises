@@ -10,6 +10,7 @@ def com_choice(items):
     print " Computer selected %s " % selection
     return selection
 
+
 def usr_choice(items):
     # Getting user selection.
     print "Choose one of the following %s" % items
