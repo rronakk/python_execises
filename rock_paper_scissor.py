@@ -16,7 +16,7 @@ def usr_choice(items):
     print "Choose one of the following %s" % items
     user_selection = raw_input('>')
     print "You selected %s" % user_selection
-    return user_selection
+    return user_selection.lower()
 
 
 def result(user_choice, comp_choice):
