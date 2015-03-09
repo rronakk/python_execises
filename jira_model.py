@@ -74,7 +74,7 @@ def get_assignee():
         return assignee
 
 def get_id():
-    """Generate unique integer in sequence, and add to the set of id """
+    """Generate unique integer in sequence, and add to the set of id"""
     ticket_id = max(id) + 1
     id.append(ticket_id)
     print "Your Ticket is created with ID : %d " %ticket_id
