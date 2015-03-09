@@ -11,7 +11,7 @@ import random
 
 possible_points = {None, 0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, float('inf')}
 users = {'Ronak', 'David', 'Prerna', 'Simone', 'Alse', 'Sweta', 'Vibha', 'Rajeswari' }
-id = {0}
+id = [0]
 
 def get_summary():
     """Get non-empty summary string."""
@@ -76,7 +76,7 @@ def get_assignee():
 def get_id():
     """Generate unique integer in sequence, and add to the set of id """
     ticket_id = max(id) + 1
-    id.add(ticket_id)
+    id.append(ticket_id)
     print "Your Ticket is created with ID : %d " %ticket_id
     return ticket_id
 
