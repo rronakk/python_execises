@@ -12,7 +12,6 @@ import random
 possible_points = {None, 0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, float('inf')}
 users = {'Ronak', 'David', 'Prerna', 'Simone', 'Alse', 'Sweta', 'Vibha', 'Rajeswari' }
 id = {0}
-t = 0
 
 def get_summary():
     """Get non-empty summary string."""
