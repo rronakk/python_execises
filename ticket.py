@@ -1,7 +1,7 @@
 __author__ = 'rray'
 
 import ast
-
+import jira_io_support
 
 class Ticket(object):
     ticket_id = 1
@@ -107,7 +107,9 @@ def create_ticket():
             continue
 
 create_ticket()
-print ticket_list
+jira_io_support.save_bundle(ticket_list,'H\Users\rray\Desktop\jira_ticket_bundle')
+content = jira_io_support.retrieve_bundle('HD\Users\rray\Desktop\jira_ticket_bundle')
 
+print ticket_list
 
 
