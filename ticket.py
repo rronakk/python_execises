@@ -87,7 +87,7 @@ def create_ticket():
         if response.lower() == 'yes' :
             set_ticket()
             while True:
-                print 'do you want to create another ?'
+                print 'Do you want to create another ?'
                 another_response = raw_input('> : ')
                 if another_response.lower() == 'yes':
                     set_ticket()
@@ -96,14 +96,14 @@ def create_ticket():
                     print 'Thank you for using JIRA'
                     break
                 else:
-                    print 'please enter valid response (yes/no) '
+                    print 'Please enter valid response (yes/no) '
                     continue
             break
         elif response.lower() == 'no':
             print 'Thank you for using JIRA'
             break
         else:
-            print 'please enter valid response (yes/no) '
+            print 'Please enter valid response (yes/no) '
             continue
 
 create_ticket()
