@@ -107,9 +107,10 @@ def create_ticket():
             continue
 
 create_ticket()
+
+# not sure if this is the correct way of saving the list on to the file
 jira_io_support.save_bundle(ticket_list,'H\Users\rray\Desktop\jira_ticket_bundle')
 content = jira_io_support.retrieve_bundle('HD\Users\rray\Desktop\jira_ticket_bundle')
 
 print ticket_list
-
 
