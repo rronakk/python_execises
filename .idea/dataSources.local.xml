@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - @localhost" uuid="b8dbfd82-5121-4e48-9cdc-69804656e157">
+      <secret-storage>memory</secret-storage>
+      <first-sync>true</first-sync>
+      <ssh-properties>
+        <enabled>true</enabled>
+        <proxy-host>ewr-apidataqa1-x1.mediamath.com</proxy-host>
+        <proxy-port>722</proxy-port>
+        <secret-storage>master_key</secret-storage>
+        <use-password>true</use-password>
+      </ssh-properties>
+    </data-source>
+  </component>
+</project>
