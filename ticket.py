@@ -106,12 +106,12 @@ def create_ticket():
             print 'Please enter valid response (yes/no) '
             continue
 
-create_ticket()
+#create_ticket()
 
 # not sure if this is the correct way of saving the list on to the file.
 
 jira_io_support.save_bundle(ticket_list,'jira_ticket_bundle')
 content = jira_io_support.retrieve_bundle('jira_ticket_bundle')
+print content
 
-print ticket_list
 
